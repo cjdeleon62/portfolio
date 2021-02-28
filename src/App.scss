@@ -1,5 +1,14 @@
 @import './variables';
 
+* {
+  box-sizing: border-box;
+}
+
 .App {
   background-color: $white;
+}
+
+.Content {
+  height: 1000px;
+  padding-top: $header-height;
 }
