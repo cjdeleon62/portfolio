@@ -1,0 +1,15 @@
+@import './../variables';
+
+.Header {
+    align-items: center;
+    background: $blue-primary-3;
+    display: flex;
+    height: 3.5rem;
+    justify-content: flex-end;
+    padding: 0 1.5rem;
+}
+
+.NavIcon {
+    color: $white;
+    font-size: 1.75rem;
+}
