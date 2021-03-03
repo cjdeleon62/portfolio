@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import './Header.scss';
 
-const Header = () => (
+const Header = ({ toggleSidebarVisible }) => (
     <header className="Header">
-        <div className="NavIcon">
+        <div className="NavIcon" onClick={toggleSidebarVisible}>
             <FontAwesomeIcon icon={faBars} />
         </div>
     </header>

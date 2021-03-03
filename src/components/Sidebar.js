@@ -8,8 +8,8 @@ const navItems = [
     { name: 'link 3', url: '#' },
 ];
 
-const Sidebar = () => (
-    <nav className="Sidebar">
+const Sidebar = ({ isSidebarVisible }) => (
+    <nav className={isSidebarVisible ? 'SidebarVisible' : 'Sidebar'}>
         <ul>
             {navItems.forEach((item) => {
                 <li><a href={item.url}>{item.name}</a></li>
