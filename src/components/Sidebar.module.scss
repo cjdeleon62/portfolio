@@ -9,7 +9,12 @@
     padding-top: $header-height;
     position: fixed;
     top: 0;
-    transition: left ease-in 200ms;
+    transition: left ease-in 400ms;
     width: 100vw;
     z-index: $layer1;
+}
+
+.SidebarVisible {
+    composes: Sidebar;
+    left: 0;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Sidebar.scss';
+import styles from './Sidebar.module.scss';
 
 const navItems = [
     { name: 'link 1', url: '#' },
@@ -9,7 +9,7 @@ const navItems = [
 ];
 
 const Sidebar = ({ isSidebarVisible }) => (
-    <nav className={isSidebarVisible ? 'SidebarVisible' : 'Sidebar'}>
+    <nav className={isSidebarVisible ? styles.SidebarVisible : styles.Sidebar}>
         <ul>
             {navItems.forEach((item) => {
                 <li><a href={item.url}>{item.name}</a></li>

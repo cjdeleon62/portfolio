@@ -3,11 +3,11 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-import './Header.scss';
+import styles from './Header.module.scss';
 
 const Header = ({ toggleSidebarVisible }) => (
-    <header className="Header">
-        <div className="NavIcon" onClick={toggleSidebarVisible}>
+    <header className={styles.Header}>
+        <div className={styles.NavIcon} onClick={toggleSidebarVisible}>
             <FontAwesomeIcon icon={faBars} />
         </div>
     </header>
